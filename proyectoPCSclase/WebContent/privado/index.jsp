@@ -8,6 +8,6 @@
 <title>Index</title>
 </head>
 <body>
-	 <div>Hola <%=((Usuario) request.getAttribute("usuario")).getNombre() %> <%=((Usuario) request.getAttribute("usuario")).getApellidos() %></div>
+	 <div>Hola <%=((Usuario) request.getSession().getAttribute("usuario")).getNombre() %> <%=((Usuario) request.getSession().getAttribute("usuario")).getApellidos() %></div>
 </body>
 </html>

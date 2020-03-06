@@ -10,6 +10,9 @@
 <form action="login" method="get">
 	<div><input type="text" name="user" placeholder="Usuario"></div>
 	<div><input type="password" name="pass" placeholder="Contraseña"></div>
+	<div>
+		<input type="checkbox" name="recordar">
+	</div>
 	<button type="submit">Entrar</button>
 	<%if(request.getParameter("errorLogin")!=null){ %>
 		<div>Usuario o Contraseña erroneos</div>
